@@ -12,6 +12,11 @@
 		553EC5781E1ECC1B0070046C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553EC5761E1ECC1B0070046C /* Main.storyboard */; };
 		553EC57A1E1ECC1B0070046C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553EC5791E1ECC1B0070046C /* Assets.xcassets */; };
 		553EC57D1E1ECC1B0070046C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553EC57B1E1ECC1B0070046C /* LaunchScreen.storyboard */; };
+		553EC5851E1ED1690070046C /* collView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EC5841E1ED1690070046C /* collView.swift */; };
+		553EC5871E1ED5DE0070046C /* extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EC5861E1ED5DE0070046C /* extra.swift */; };
+		553EC58A1E1ED6580070046C /* newcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EC5881E1ED6580070046C /* newcell.swift */; };
+		553EC58B1E1ED6580070046C /* defaultcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EC5891E1ED6580070046C /* defaultcell.swift */; };
+		553EC58D1E1ED8820070046C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EC58C1E1ED8820070046C /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		553EC5791E1ECC1B0070046C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553EC57C1E1ECC1B0070046C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553EC57E1E1ECC1B0070046C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553EC5841E1ED1690070046C /* collView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collView.swift; sourceTree = "<group>"; };
+		553EC5861E1ED5DE0070046C /* extra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extra.swift; sourceTree = "<group>"; };
+		553EC5881E1ED6580070046C /* newcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newcell.swift; sourceTree = "<group>"; };
+		553EC5891E1ED6580070046C /* defaultcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaultcell.swift; sourceTree = "<group>"; };
+		553EC58C1E1ED8820070046C /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +64,13 @@
 		553EC5711E1ECC1B0070046C /* selectiveCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				553EC5841E1ED1690070046C /* collView.swift */,
+				553EC5861E1ED5DE0070046C /* extra.swift */,
 				553EC5721E1ECC1B0070046C /* AppDelegate.swift */,
 				553EC5741E1ECC1B0070046C /* ViewController.swift */,
+				553EC5881E1ED6580070046C /* newcell.swift */,
+				553EC5891E1ED6580070046C /* defaultcell.swift */,
+				553EC58C1E1ED8820070046C /* extensions.swift */,
 				553EC5761E1ECC1B0070046C /* Main.storyboard */,
 				553EC5791E1ECC1B0070046C /* Assets.xcassets */,
 				553EC57B1E1ECC1B0070046C /* LaunchScreen.storyboard */,
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553EC58A1E1ED6580070046C /* newcell.swift in Sources */,
 				553EC5751E1ECC1B0070046C /* ViewController.swift in Sources */,
+				553EC5851E1ED1690070046C /* collView.swift in Sources */,
+				553EC58D1E1ED8820070046C /* extensions.swift in Sources */,
+				553EC5871E1ED5DE0070046C /* extra.swift in Sources */,
+				553EC58B1E1ED6580070046C /* defaultcell.swift in Sources */,
 				553EC5731E1ECC1B0070046C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +322,7 @@
 				553EC5831E1ECC1B0070046C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

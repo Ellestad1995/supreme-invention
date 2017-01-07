@@ -7,16 +7,7 @@
 //
 
 import Foundation
-
-
-
-
-extension Notification.Name {
-    static let postalResult = Notification.Name("postalresponse")
-    static let badPostal = Notification.Name("badpostal")
-    static let regnumber = Notification.Name("regnumber")
-}
-
+import UIKit
 
 extension UIView {
     
