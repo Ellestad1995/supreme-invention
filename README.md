@@ -7,7 +7,7 @@ Welcome to the supreme-invention wiki!
 > Every subfolder contains a project or a file to use.
 > Go to the relevant section below to find out how to implement it.
 
-###Supreme-invention contains the following project or help files
+### Supreme-invention contains the following project or help files
 - Bottom Sheet 
 - Selective CollectionView
 - Sloth
@@ -46,13 +46,15 @@ Fill the cells with information, let user tap them, and add cells.
 
 ![CollectionView screenshot](http://i.imgur.com/nTxkTcw.png)
 
-##Sloth
+## Sloth
 
 Some functions for verification of different types of data.
 Some functions are:
 
+``` Swift
 - isValidEmail(email: String) ->
 - isValidRegNumber(withRegNumber: String) -> Bool //Norwegian registration numbers
 - isValidPhoneNumber(withPhoneNumber: String) -> Bool //8 numbers. Norwegian phone numbers, Excluding country code
 - isValidPostalNumber(withPostalNumber: String) -> Bool //Verification of Norwegian phone numbers
 - isValidISBNNumber(with ISBN: String)-> (Bool, ISBNType) //Verification of ISBN 13 and ISBN 10
+```
