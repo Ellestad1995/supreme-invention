@@ -65,7 +65,7 @@ class BottomSheet: UIView {
             let dist1 = self.contentView.frame.origin.y
             let dist2 = self.frame.origin.y
             let diff = dist1 - dist2
-            _minimumPoint = value - 44 - diff - 20
+            _minimumPoint = value - diff
         }
     }
     
@@ -176,16 +176,16 @@ class BottomSheet: UIView {
         //MARK!- Constraints for handle
         self.addSubview(self.handle)
         self.handle.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        self.handle.topAnchor.constraint(equalTo: self.topAnchor, constant: 5.0).isActive = true
+        self.handle.topAnchor.constraint(equalTo: self.topAnchor, constant: 2.0).isActive = true
         self.handle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.20).isActive = true
-        self.handle.heightAnchor.constraint(equalToConstant: 10.0).isActive = true
+        self.handle.heightAnchor.constraint(equalToConstant: 5.0).isActive = true
         
         
         //MARK - Constraints for top content view
         self.addSubview(self.topContentView)
         self.topContentView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0.0).isActive = true
         self.topContentView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0.0).isActive = true
-        self.topContentView.topAnchor.constraint(equalTo: self.handle.bottomAnchor, constant: 2.5).isActive = true
+        self.topContentView.topAnchor.constraint(equalTo: self.handle.bottomAnchor, constant: 2.0).isActive = true
         self.tcvHeight = self.topContentView.heightAnchor.constraint(equalToConstant: 0.0)
         self.tcvHeight!.isActive = true
         
