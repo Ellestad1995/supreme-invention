@@ -60,7 +60,8 @@ Some functions are:
 - isValidISBNNumber(with ISBN: String)-> (Bool, ISBNType) //Verification of ISBN 13 and ISBN 10
 ```
 
-##Tutorial Slides
+## Tutorial Slides
+
 A project for a simple tutorial thingy for iOS. Present this view modally, and the user will get a tutorial by scrolling through the images.
 Connect a new/empty viewcontroller to TutorialSlides.
 You should add some logic to now present this view every time. Maybe through UserDefaults.
@@ -71,8 +72,11 @@ if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(wi
             self.present(vc, animated: true, completion: nil)
         }
 ´´´
+
 ![Tutorial Slides Screenshot Example](http://imgur.com/eaQVdkW)
+
 ![Tutorial Slides Screenshot Example](http://imgur.com/ezmOEtZ)
 
 Remember to add the storyBoard identifier:
+
 ![Add storyboard identifier](http://imgur.com/Za2GxbZ)
