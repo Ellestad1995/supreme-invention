@@ -73,10 +73,10 @@ if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(wi
         }
 ```
 
-![Tutorial Slides Screenshot Example](http://imgur.com/eaQVdkW)
+![Tutorial Slides Screenshot Example](http://i.imgur.com/eaQVdkW.png)
 
-![Tutorial Slides Screenshot Example](http://imgur.com/ezmOEtZ)
+![Tutorial Slides Screenshot Example](http://i.imgur.com/ezmOEtZ.png)
 
 Remember to add the storyBoard identifier:
 
-![Add storyboard identifier](http://imgur.com/Za2GxbZ)
+![Add storyboard identifier](http://i.imgur.com/Za2GxbZ.png)
