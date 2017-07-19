@@ -71,3 +71,8 @@ if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(wi
             self.present(vc, animated: true, completion: nil)
         }
 ´´´
+![Tutorial Slides Screenshot Example](http://imgur.com/eaQVdkW)
+![Tutorial Slides Screenshot Example](http://imgur.com/ezmOEtZ)
+
+Remember to add the storyBoard identifier:
+![Add storyboard identifier](http://imgur.com/Za2GxbZ)
