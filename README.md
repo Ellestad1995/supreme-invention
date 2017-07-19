@@ -66,12 +66,12 @@ A project for a simple tutorial thingy for iOS. Present this view modally, and t
 Connect a new/empty viewcontroller to TutorialSlides.
 You should add some logic to now present this view every time. Maybe through UserDefaults.
 
-´´´
+```
 if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TutorialSlides") as? TutorialSlides {
             vc.modalPresentationStyle = .overCurrentContext
             self.present(vc, animated: true, completion: nil)
-        }
-´´´
+        }
+```
 
 ![Tutorial Slides Screenshot Example](http://imgur.com/eaQVdkW)
 
