@@ -14,7 +14,7 @@ import UIKit
  - The viewcontroller will dismiss itself; by user interaction
  */
 
-class ViewController: UIViewController {
+class TutorialSlides: UIViewController {
 
     /**
         tutorialimages are the images displayed by the carouselle
@@ -44,7 +44,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //MARK: - To dismiss the view by tapping outside of the scrollviews bouns
+        let touchView = UIView(frame: self.view.bounds)
+        self.view.addSubview(touchView)
+        let touchEvent = UITapGestureRecognizer(target: self, action: #selector(TutorialSlides.closeView))
+        touchEvent.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(touchEvent)
+
     
         //MARK: - Just a faded black background
         self.view.backgroundColor = UIColor.clear
@@ -110,11 +117,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func closeView(){
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 
-extension ViewController: UIScrollViewDelegate{
+extension TutorialSlides: UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         //code..
     }
