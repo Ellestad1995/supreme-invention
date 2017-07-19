@@ -11,6 +11,7 @@ Welcome to the supreme-invention wiki!
 - Bottom Sheet 
 - Selective CollectionView
 - Sloth
+- Tutorial slides (A view with slides(images) to make a tutorial)
 
 ## Bottom Sheet
 
@@ -58,3 +59,24 @@ Some functions are:
 - isValidPostalNumber(withPostalNumber: String) -> Bool //Verification of Norwegian phone numbers
 - isValidISBNNumber(with ISBN: String)-> (Bool, ISBNType) //Verification of ISBN 13 and ISBN 10
 ```
+
+## Tutorial Slides
+
+A project for a simple tutorial thingy for iOS. Present this view modally, and the user will get a tutorial by scrolling through the images.
+Connect a new/empty viewcontroller to TutorialSlides.
+You should add some logic to now present this view every time. Maybe through UserDefaults.
+
+```
+if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TutorialSlides") as? TutorialSlides {
+            vc.modalPresentationStyle = .overCurrentContext
+            self.present(vc, animated: true, completion: nil)
+        }
+```
+
+![Tutorial Slides Screenshot Example](http://i.imgur.com/eaQVdkW.png)
+
+![Tutorial Slides Screenshot Example](http://i.imgur.com/ezmOEtZ.png)
+
+Remember to add the storyBoard identifier:
+
+![Add storyboard identifier](http://i.imgur.com/Za2GxbZ.png)
